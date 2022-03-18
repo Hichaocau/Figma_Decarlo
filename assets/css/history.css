@@ -20,7 +20,7 @@
 .birth__img{
     width: 100%;
     padding-top: 50.85%;
-    background: url(../img/birth.png) center / cover no-repeat;
+    background: url(../img/birth.jpg) center / cover no-repeat;
     position: relative;
 }
 
@@ -63,20 +63,20 @@
 .blog__item-img--first{
     width: 500px;
     height: 515px;
-    background: url(../img/ele.png) center / cover no-repeat;
+    background: url(../img/ele.jpg) center / cover no-repeat;
 }
 
 .blog__item-img--second{
     width: 500px;
     height: 515px;
-    background: url(../img/quali.png) center / cover no-repeat;
+    background: url(../img/quali.jpg) center / cover no-repeat;
 }
 
 
 .blog__item-img--third{
     width: 500px;
     height: 515px;
-    background: url(../img/story.png) center / cover no-repeat;
+    background: url(../img/story.jpg) center / cover no-repeat;
 }
 
 .blog__list{

@@ -61,15 +61,6 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 .dealer__input{
     color: var(--text-color);
     margin-bottom: 20px;
@@ -79,6 +70,10 @@
 .dealer__input input{
     margin-right: 20px;
     transform: scale(1.6);
+}
+
+.dealer__input label{
+    cursor: pointer;
 }
 
 .dealer__btn{
