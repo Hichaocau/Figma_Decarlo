@@ -1,0 +1,30 @@
+.ask{
+    padding: 100px 0;
+}
+
+.ask__header{
+    margin-bottom: 60px;
+}
+
+.ask__header-item a{
+    line-height: 2.7;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #BABCC4;
+}
+
+.ask__header-item .ask__active{
+    color: var(--text-color);
+}
+
+.ask__header-item{
+    margin-right: 60px;
+}
+
+.ask__header-item:nth-child(5){
+    margin-right: 0;
+}
+
+.ask__header-item:nth-child(1){
+    box-shadow: inset 0px -2px 0px #171719;
+}

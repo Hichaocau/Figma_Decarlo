@@ -1,0 +1,73 @@
+/* Pc */
+@media (min-width: 1024px){
+    .hide-on-pc{
+        display: none;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+    .header__about,
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .container,
+    .container__small,
+    .container__large{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__icon {
+        flex: 30;
+        justify-content: end;
+    }
+    .header__menu{
+        flex: 1;
+    }
+    .text__header {
+        font-size: 2rem;
+    }
+    .header__wrap{
+        height: 70px;
+    }
+    .header__logo img{
+        width: 79.25px;
+        height: 40px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+        background: url(../img/slider__mb.jpg) center / cover no-repeat;
+    }
+    .slider__text h2{
+        font-size: 1.8rem;
+    }
+    .slider__text-btn{
+        margin-top: 15px;
+    }
+    .slider__text{
+        padding: 215px 0 15px 15px;
+    }
+    .story__list-img--wrap{
+        height: 345px;
+        width: 345px;
+    }
+    .featured__list-item--img{
+        width: 150px;
+        height: 150px;
+    }
+    
+}

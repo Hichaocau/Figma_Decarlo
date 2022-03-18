@@ -1,0 +1,54 @@
+.contact{
+    padding: 100px 0;
+}
+
+.contact__header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact__header h2{
+    margin-bottom: 15px;
+}
+
+.contact__header-des{
+    justify-content: center;
+}
+
+.contact__header-des a{
+    margin-left: 3px;
+    text-decoration: underline;
+}
+
+.contact__item{
+    border: 1px solid #ECECEC;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact__item img{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.contact__info{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact__text p,
+.contact__info > p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.contact__text p{
+    margin-bottom: 5px;
+}
+.contact__info > p{
+    margin-bottom: 11px;
+}
+
+.contact__info-time p{
+    margin-top: 5px;
+}

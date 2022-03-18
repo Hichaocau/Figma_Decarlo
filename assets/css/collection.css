@@ -1,0 +1,45 @@
+.collection{
+    background: url("../img/ring.jpg") center / cover no-repeat;
+}
+
+.collection__text h2{
+    margin-bottom: 5px;
+}
+
+.collection__info{
+    padding: 151px 0;
+}
+
+.featured{
+    padding-bottom: 40px;
+    margin-top: 0;
+}
+
+.featured__list-item{
+    margin-bottom: 60px;
+}
+
+.collection__options{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.collection__options-item{
+
+}
+
+.collection__options-item p,
+.collection__select,
+.collection__sort span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.collection__select{
+
+}
+
+.collection__options-item p{
+    margin-left: 68px;
+}

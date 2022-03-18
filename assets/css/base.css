@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+    --text-color: #171719;
+    --subtext-color: #ffffff;
+    --des-color: #84848E;
+    --bgc-color: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+    scroll-behavior: smooth;
+}
+
+html{
+    /* HACK 1rem = 10px*/
+    font-size: 62.5%;
+    line-height: 1.6px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__full{
+    width: 100%;
+}
+
+.container__large {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.container__small {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.df{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.df__center{
+    justify-content: center;
+}
+
+.df__flex{
+    flex-direction: column
+}
+
+.btn{
+    background-color: #ffffff;
+    padding: 12px 32px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    line-height: 1.714;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #f5f5f5;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    margin-bottom: 45px;
+}
+
+.black__color{
+    color: var(--text-color);
+}
+
+.white__color{
+    color: var(--subtext-color);
+}
+
+.text{
+    font-size: 1.4rem;
+    line-height: 1.71;  /* 24px */
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text__header{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text__des{
+    color: var(--des-color);
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+
+/* ========================================================================= */
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+
+    .wide .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .wide .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wide .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .wide .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}

@@ -1,0 +1,392 @@
+.main{
+    width: 100%;
+}
+
+.active{
+    color: var(--des-color);
+}
+
+.subheader__wrap{
+    background-color: var(--text-color);
+}
+
+.subheader{
+    height: 50px;
+}
+
+.subheader span{
+    margin-right: 9px;
+    text-transform: none;
+}
+
+.subheader__languages--list{
+    background-color: var(--text-color);
+    text-transform: none;
+    cursor: pointer;
+}
+
+.header__wrap{
+    height: 110px;
+    position: relative;
+}
+
+.header__about{
+    margin: 0 119px 0 136px;
+    flex: 1;
+}
+
+.header__icon img{
+    margin-left: 25.84px;
+}
+
+.header__icon img:nth-child(1){
+    margin-left: 0;
+}
+
+.header__logo img{
+    width: 138.68px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.slider{
+    width: 100%;
+    background: url(../img/slider1.jpg) center / cover no-repeat;
+}
+
+.slider__text{
+    padding: 448px 0 50px 0;
+}
+
+.slider__text h2{
+    margin: 0;
+}
+
+.slider__text-btn{
+    margin-top: 20px;
+}
+
+.category{
+    padding: 100px 0 80px 0;
+    margin-bottom: 103px;
+}
+
+.category__list--item{
+    position: relative;
+    height: 360px;
+    margin-bottom: 20px;
+}
+
+.category__list--item button{
+    position: absolute;
+    padding: 13px;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    width: 125px;
+    margin: auto;
+}
+
+.story{
+    background-color: var(--bgc-color);
+}
+
+.story__wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.story__list-img--wrap{
+    width: 593px;
+    height: 593px;
+    background: url(../img/story.png) center/ cover no-repeat;
+    margin: 0 auto;
+}
+
+.story__play{
+    margin: auto;
+    cursor: pointer;
+}
+
+.story__play:hover{
+    transform: scale(1.2)
+}
+
+.story__list-item{
+    padding: 133px 90px;
+}
+
+.story__list-item--text h2{
+    margin-bottom: 20px;
+}
+
+.story__list-item--btn{
+    margin-top: 70px;
+}
+
+.story__list-item--btn a{
+    display: block;
+}
+
+.featured{
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.featured__list-item{
+    text-align: center;
+}
+
+.featured__list-item--img{
+    background: url(../img/product.png) center/ cover no-repeat;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.featured__list-item--icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.featured__list-item--info p{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.featured__list-item--info span{
+    color: #555562;
+}
+
+.featured__list-item button{
+    border: 1px solid #171719;
+    margin-top: 20px;
+}
+
+.collection{
+    background: url("../img/collection.jpg") center / cover no-repeat;
+}
+
+.collection__info{
+    padding: 185px 0;
+}
+
+.collection__text{
+    margin-bottom: 30px;
+}
+
+.collection__more span,
+.collection__text p,
+.collection__text h2{
+    max-width: 327px;
+}
+
+.collection__text h2{ 
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collection__text p{
+    text-transform: none;
+    line-height: 1.71;
+    letter-spacing: 0;
+    color: #BABABF;
+}
+
+.collection__more{
+    justify-content: unset;
+    cursor: pointer;
+}
+
+.collection__more img{
+    margin-left: 10px;
+}
+
+.service{
+    padding: 100px 0;
+    background-color: var(--bgc-color);
+}
+
+.service__list-wrap{
+    overflow: hidden;
+}
+
+.service__item{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service__item-img{
+    margin-bottom: 30px;
+}
+
+.service__item-text p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.service__item-more{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: var(--text-color);
+}
+
+.footer__logo{
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer__logo img{
+    width: 158px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.footer__main{
+    padding: 70px 0 66px 0;
+    border-top: 1px solid #313135;
+}
+
+.footer__item-header{
+    margin-bottom: 30px;
+}
+
+.footer__item-link{
+    margin-top: 15px;
+}
+
+.footer__item-link:nth-child(1){
+    margin: 0;
+}
+
+.footer__item-input--wrap{
+    background-color: #262628;
+    height: 41px;
+    padding: 0 10px;
+    margin-bottom: 70px;
+}
+
+.footer__item-input{
+    background-color: #262628;
+    color: var(--subtext-color);
+}
+
+.footer__item-input--wrap button{
+    background-color: #262628;
+    color: var(--subtext-color);
+    cursor: pointer;
+    padding: 0;
+}
+
+.footer__item-input--wrap button:hover{
+    color: var(--des-color);
+    background-color: #262628;
+}
+
+.footer__item-socials{
+    max-width: 170px;
+}
+
+.footer__item-socials--header{
+    margin-bottom: 30px;
+}
+
+.footer__credit{
+    height: 70px;
+}
+
+.footer__credit p{
+    line-height:70px
+}
+
+
+.footer__item-socials--list a img,
+.footer__item-link a,
+.service__item-more,
+.collection__more,
+.header__icon img,
+.header__item a{
+    position: relative;
+    right: 0;
+    transform: right 0.2s linear;
+    cursor: pointer;
+}
+
+.footer__item-socials--list a img:hover,
+.footer__item-link a:hover,
+.service__item-more:hover,
+.collection__more:hover,
+.header__icon img:hover,
+.header__item a:hover{
+    right: -8px;
+    color: var(--des-color);
+}
+
+.header__menu{
+    margin-left: 25.84px;
+    cursor: pointer;
+}
+
+.header__menu i{
+    font-size: 2rem;
+    margin-top: 2px;
+}
+
+.header__navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--subtext-color);
+    padding: 30px 15px;
+    box-shadow: inset 0px -1px 0px #ECECEC;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+    transition: all 0.3s linear;
+}
+
+.active {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.header__menu .fa-xmark{
+    font-size: 2.8rem;
+    transform: rotate(180deg);
+}
+
+.header__navbar .header__list{
+    display: block;
+}
+
+.header__navbar .header__list .header__item{
+    margin-bottom: 30px;
+}
+
+.header__navbar .header__list .header__item:nth-child(5){
+    margin-bottom: 0;
+}
+
+.header__navbar .header__list .header__item img{
+    cursor: pointer;
+}
+
+.header__navbar .header__list .header__item img:hover{
+    right: 0;
+}
+
+
+
+
+

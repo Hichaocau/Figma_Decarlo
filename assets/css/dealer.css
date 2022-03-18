@@ -1,0 +1,92 @@
+.dealer{
+    padding: 100px 0;
+}
+
+.dealer__header{
+    text-align: center;
+}
+
+.dealer__header h2 {
+    margin-bottom: 12px;
+}
+
+.dealer__form{
+    padding: 100px 0 10px 0;
+}
+
+.dealer__form-item{
+    margin-bottom: 40px;
+}
+
+.form__label{
+    font-size: 1.6rem;
+    margin-bottom: 11px;
+}
+
+.form__group{
+    align-items: unset;
+}
+
+.form__group-select{
+    border: 1px solid #ECECEC;
+    height: 60px;
+}
+
+.form__group-select select{
+    width: 95%;
+    height: 100%;
+    padding-left: 20px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.form__control{
+    border: 1px solid #ECECEC;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+}
+
+.form__control::placeholder{
+    color: #BABCC4;
+}
+
+.form__group-mes--wrap{
+    height: 150px;
+    border: 1px solid #ECECEC;
+}
+
+.form__group-mes--wrap input{
+    border: none;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.dealer__input{
+    color: var(--text-color);
+    margin-bottom: 20px;
+    justify-content: unset;
+}
+
+.dealer__input input{
+    margin-right: 20px;
+    transform: scale(1.6);
+}
+
+.dealer__btn{
+    margin-top: 30px;
+    color: var(--subtext-color);
+    background-color: var(--text-color);
+}
+
+.dealer__btn:hover{
+    color: var(--text-color);
+}

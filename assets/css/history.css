@@ -1,0 +1,116 @@
+.brand{
+    height: 200px;
+    color: #fff;
+    background-color: var(--bgc-color);
+}
+
+.brand__text{
+    margin: auto;
+}
+
+.brand__text p{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.birth{
+    padding: 100px 0;
+}
+
+.birth__img{
+    width: 100%;
+    padding-top: 50.85%;
+    background: url(../img/birth.png) center / cover no-repeat;
+    position: relative;
+}
+
+.birth__img a{
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.birth__img a img:hover{
+    transform: scale(1.2);
+}
+
+.birth__info{
+    text-align: center;
+}
+
+.birth__info h2{
+    margin: 50px 0 25px 0;
+}
+
+.blog{
+    background-color: var(--bgc-color);
+    padding-top: 100px;
+}
+
+.blog__item-header h2{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.33333;
+}
+
+.blog__item-detail span{
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.blog__item-img--first{
+    width: 500px;
+    height: 515px;
+    background: url(../img/ele.png) center / cover no-repeat;
+}
+
+.blog__item-img--second{
+    width: 500px;
+    height: 515px;
+    background: url(../img/quali.png) center / cover no-repeat;
+}
+
+
+.blog__item-img--third{
+    width: 500px;
+    height: 515px;
+    background: url(../img/story.png) center / cover no-repeat;
+}
+
+.blog__list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 57.63% 42.37%;
+    grid-gap: 0px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.blog__list--first{
+    max-width: 497px;
+}
+
+.reason{
+    background: url(../img/his_footer.jpg) center / cover no-repeat;
+}
+
+.reason__text{
+    width: 100%;
+    text-align: center;
+    padding: 175px 0;
+}
+
+.reason__text h2{
+    margin-bottom: 15px;
+}
+
+.reason__text p{
+    margin-bottom: 41px;
+}
+
+.reason__text button{
+
+}
+

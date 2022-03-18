@@ -1,0 +1,32 @@
+.product{
+    padding: 100px 0;
+}
+
+.product__text{
+    padding: 205px 0;
+}
+
+.product__item{
+    padding: 50px 40px;
+}
+
+.product__text h2{
+    margin-bottom: 27px;
+}
+
+.product__text p{
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.product__img{
+    background: url(../img/product_img.jpg) center / cover no-repeat;
+}
+
+.product__story{
+    margin: 100px auto;
+}
+
+.story__list-img--wrap{
+    background: url(../img/product_img.png) center/ cover no-repeat;
+}
