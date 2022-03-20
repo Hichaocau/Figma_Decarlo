@@ -7,34 +7,6 @@ iconHeader.addEventListener('click', () => {
 })
 
 
-
-
-
-
-
-
-
-const storyWrap = document.querySelector('.story__list-img--wrap')
-const iconPlayShop = document.querySelector('.story__play')
-const videoShop = document.querySelector('.main__video')
-
-iconPlayShop.addEventListener('click', function () {
-  storyWrap.classList.add('none')
-  videoShop.setAttribute('autoplay', 'true')
-  videoShop.setAttribute('loop', 'true')
-  videoShop.classList.remove('none')
-})
-
-
-
-
-
-
-
-
-
-
-
 // khởi tạo slick slider
 $(document).ready(function(){
   $('.slider__wrap').slick({
@@ -67,11 +39,43 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false //ẩn mũi tên
+              arrows: true
             }
           }
         ],
   });
 });
 
+
+const storyWrap = document.querySelector('.story__list-img--wrap')
+const iconPlayShop = document.querySelector('.story__play')
+const videoShop = document.querySelector('.main__video')
+
+iconPlayShop.addEventListener('click', function () {
+  storyWrap.classList.add('none')
+  videoShop.setAttribute('autoplay', 'true')
+  videoShop.classList.remove('none')
+})
+
+
+
+const heartWrap = document.querySelectorAll('.featured__list-item--img')
+const heart = document.querySelectorAll('.icon__fisrt')
+const heartActive = document.querySelectorAll('.icon__second')
+
+
+heartWrap.forEach(function (heartItem, index) {
+  heartItem.addEventListener('click', () => {
+      heart[index].classList.toggle('none')
+      heartActive[index].classList.toggle('none')
+  })
+})
+
+
+const iconDown = document.querySelector('.header__item-down-2 img')
+const menuDown = document.querySelector('.menu__down-2')
+
+iconDown.addEventListener('click', () => {
+  menuDown.classList.toggle('none')
+})
 

@@ -14,8 +14,8 @@
     .container,
     .container__small,
     .container__large{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
     .header__icon {
         flex: 30;
@@ -34,7 +34,35 @@
         width: 79.25px;
         height: 40px;
     }
+    .slick-prev{
+        left: 0;
+    }
+    .slick-next{
+        right: 0;
+    }
+    h2 {
+        margin-bottom: 25px;
+    }
+    .category{
+        margin-bottom: 0;
+        padding-top: 40px;
+    }
+    .story__list-item {
+        padding: 60px 30px;
+    }
+    .featured{
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    .service{
+        padding: 40px 0 20px 0;
+    }
+    .service__item{
+        margin: 0 20px 20px 20px;
+    }
+    
 }
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px){
     .hide-on-tablet{
@@ -68,6 +96,59 @@
     .featured__list-item--img{
         width: 150px;
         height: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
+    .featured__list{
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .featured__list::-webkit-scrollbar {
+        display: none;
+    }
+    .collection {
+        background: url(../img/mb-collect.jpg) center / cover no-repeat;
+    }
+    .collection__info{
+        padding: 74px 0;
+    }
+    .footer__logo{
+        padding: 40px 0;
+    }
+    .footer__logo img{
+        width: 92.94px;
+        height: 50px;
+    }
+    .footer__item-fouth{
+        order: 1;
+    }
+    .footer__item-first{
+        order: 2;
+    }
+    .footer__item-second{
+        order: 3;
+    }
+    .footer__item-third{
+        order: 4;
+    }
+    .footer__main{
+        padding: 50px 0;
+    }
+    .footer__item-about,
+    .footer__item-socials{
+        margin-bottom: 60px;
+    }
+    .footer__item-header{
+        margin-bottom: 20px;
+    }
+    .footer__credit{
+        margin-bottom: 23px;
+        text-align: center;
+        padding: 0 35px;
+    }
+    .footer__credit p{
+        line-height: 1.71;
+    }
+   
     
 }

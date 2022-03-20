@@ -51,8 +51,16 @@
                     <li class="header__item">
                         <a class="text black__color active" href="history.html">our history</a>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item header__item-down">
                         <a class="text black__color" href="collection.html">jewelery production</a>
+                        <ul class="menu__down none">
+                            <li class="menu__down-item">
+                                <a class="text black__color" href="product.html">care of product</a>
+                            </li>
+                            <li class="menu__down-item">
+                                <a class="text black__color" href="detail.html">product details</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="dealer.html">become a dealer</a>
@@ -76,15 +84,23 @@
             </div>
             <div class="header__navbar hide-on-pc">
                 <ul class="header__list df">
-                    <li class="header__item df">
-                        <a class="text black__color" href="">shop</a>
-                        <img src="./assets/img/arrow_nav.svg" alt="">
+                    <li class="header__item">
+                        <a class="text black__color" href="index.html">shop</a>
                     </li>
                     <li class="header__item">
                         <a class="text black__color active" href="history.html">our history</a>
                     </li>
-                    <li class="header__item">
-                        <a class="text black__color" href="product.html">jewelery production</a>
+                    <li class="header__item df header__item-down-2">
+                        <a class="text black__color" href="#">jewelery production</a>
+                        <img src="./assets/img/arrow_nav.svg" alt="">
+                        <ul class="menu__down-2 none">
+                            <li class="menu__down-item-2">
+                                <a class="text black__color" href="product.html">care of product</a>
+                            </li>
+                            <li class="menu__down-item-2">
+                                <a class="text black__color" href="detail.html">product details</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="dealer.html">become a dealer</a>
@@ -112,10 +128,13 @@
         <div class="birth container__small">
             <div class="birth__list df df__flex">
                 <div class="birth__img df">
-                    <a href="">
+                    <div class="birth__img-detail">
                         <img src="./assets/img/play.svg" alt="image">
-                    </a>
+                    </div>
                 </div>
+                <video controls class="none main__video_2">
+                    <source src="./assets/img/video.mp4">
+                </video>
                 <div class="birth__info df df__flex">
                     <h2 class="text__header black__color">BIRTH OF THE BRAND</h2>
                     <p class="text text__des">The DE CARLO brand was born in Florence on November 7, 2019, thanks to the passion for precious stones that Nicholas De Carlo, a Florentine entrepreneur, has cultivated since he was a child.</p>
@@ -210,7 +229,7 @@
             <div class="footer__main container">
                 <div class="footer__list grid wide">
                     <div class="row">
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-first">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">CUSTOMER CARE</p>
                                 <ul class="footer__item-about">
@@ -227,7 +246,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-second">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
@@ -254,7 +273,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-third">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
@@ -281,7 +300,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-fouth">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">SUBSCRIBE FOR NEWSLETTER</p>
                                 <form action="">
@@ -317,4 +336,11 @@
             </div>
         </div>
         <!-- footer section end -->
-
+    </div>
+</body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./history.js"></script>
+</html>

@@ -24,7 +24,7 @@
     position: relative;
 }
 
-.birth__img a{
+.birth__img .birth__img-detail{
     cursor: pointer;
     position: absolute;
     top: 43%;
@@ -32,7 +32,7 @@
     transform: translateX(-50%);
 }
 
-.birth__img a img:hover{
+.birth__img .birth__img-detail img:hover{
     transform: scale(1.2);
 }
 
@@ -42,6 +42,11 @@
 
 .birth__info h2{
     margin: 50px 0 25px 0;
+}
+
+.main__video_2{
+    width: 100%;
+    height: 100%;
 }
 
 .blog{
