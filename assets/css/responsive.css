@@ -4,6 +4,23 @@
         display: none;
     }
 }
+/* Pc small */
+@media (max-width: 1200px){
+    .header__about{
+        display: none;
+    }
+    .header__menu,
+    .header__navbar{
+        display: block;
+    }
+    .header__icon {
+        flex: 30;
+        justify-content: end;
+    }
+    .header__menu{
+        flex: 1;
+    }
+}
 
 /* Mobile & Tablet */
 @media (max-width: 1023px){
@@ -17,13 +34,7 @@
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-    .header__icon {
-        flex: 30;
-        justify-content: end;
-    }
-    .header__menu{
-        flex: 1;
-    }
+   
     .text__header {
         font-size: 2rem;
     }
@@ -60,7 +71,37 @@
     .service__item{
         margin: 0 20px 20px 20px;
     }
-    
+    .brand{
+        height: 140px;
+    }
+    .brand__text p{
+        font-size: 1.8rem;
+    }
+    .birth{
+        padding: 40px 0;
+    }
+    .birth__info {
+        padding: 0px 20px;
+    }
+    .blog__list{
+        display: block;
+    }
+    .blog__item-img--third,
+    .blog__item-img--second,
+    .blog__item-img--first {
+        width: 345px;
+        height: 345px;
+        margin: auto;
+    }
+    .blog{
+        padding-top: 40px;
+    }
+    .blog__list--first-mb{
+        order: 2;
+    }
+    .blog__list--second-mb{
+        order: 1;
+    }
 }
 
 /* Tablet */
