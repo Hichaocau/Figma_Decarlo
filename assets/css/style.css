@@ -133,6 +133,7 @@
 .story__play{
     margin: auto;
     cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 .story__play:hover{
@@ -171,6 +172,7 @@
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
+    max-width: 100%;
 }
 
 .featured__list-item--icon{
@@ -347,17 +349,17 @@
     line-height:70px
 }
 
-
-/* .footer__item-socials--list a img, */
 .footer__item-link a,
 .service__item-more,
 .collection__more{
-/* .header__icon img, */
-/* .header__item a{ */
     position: relative;
     right: 0;
     transform: right 0.2s linear;
     cursor: pointer;
+}
+
+.header__item a{
+    transition: all 0.3s ease-in-out;
 }
 
 .footer__item-link a:hover,
@@ -427,6 +429,10 @@
     position: relative;
 }
 
+.header__item-down-2{
+    margin-bottom: 0 !important;
+}
+
 .header__item-down:hover .menu__down{
     display: block;
 }
@@ -441,7 +447,6 @@
     right: 0;
 }
 
-.menu__down-2,
 .menu__down{
     position: absolute;
     top: 120%;
@@ -458,8 +463,23 @@
 }
 
 .menu__down-2{
-    transition: all 0.3 liner;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 4;
+    padding: 0 20px 20px 20px;
+    height: 0;
 }
+
+.menu__down-2--active{
+    height: 98px;
+}
+
+.header__item-down-2-wrap {
+    width: 100%;
+}
+
 
 
 

@@ -23,15 +23,17 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              infinite: true,
-              dots: true
+              infinite: false,
+              dots: false,
             }
           },
           {
             breakpoint: 741,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              infinite: false,
+              dots: false,
             }
           },
           {
@@ -39,7 +41,9 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: true
+              arrows: true,
+              infinite: false,
+              dots: false,
             }
           }
         ],
@@ -71,11 +75,10 @@ heartWrap.forEach(function (heartItem, index) {
   })
 })
 
-
-const iconDown = document.querySelector('.header__item-down-2 img')
+const itemDown = document.querySelector('.header__item-down-2-wrap')
 const menuDown = document.querySelector('.menu__down-2')
 
-iconDown.addEventListener('click', () => {
-  menuDown.classList.toggle('none')
+itemDown.addEventListener('click', () => {
+  menuDown.classList.toggle('menu__down-2--active')
 })
 

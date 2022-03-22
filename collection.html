@@ -87,15 +87,25 @@
             </div>
             <div class="header__navbar hide-on-pc">
                 <ul class="header__list df">
-                    <li class="header__item df">
-                        <a class="text black__color" href="">shop</a>
-                        <img src="./assets/img/arrow_nav.svg" alt="">
+                    <li class="header__item">
+                        <a class="text black__color" href="index.html">shop</a>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="history.html">our history</a>
                     </li>
-                    <li class="header__item">
-                        <a class="text black__color" href="product.html">jewelery production</a>
+                    <li class="header__item df header__item-down-2 df df__flex">
+                        <div class="header__item-down-2-wrap df">
+                            <a class="text black__color active" href="collection.html">jewelery production</a>
+                            <img src="./assets/img/arrow_nav.svg" alt="">
+                        </div>
+                        <ul class="menu__down-2">
+                            <li class="menu__down-item-2">
+                                <a class="text black__color" href="product.html">care of product</a>
+                            </li>
+                            <li class="menu__down-item-2">
+                                <a class="text black__color" href="detail.html">product details</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="dealer.html">become a dealer</a>
@@ -140,7 +150,7 @@
                 </div>
             </div>
             <div class="featured__list-wrap grid wide">
-                <div class="featured__list row">
+                <div class="featured__list featured__list-row row">
                     <div class="col l-3 m-6 c-6">
                         <div class="featured__list-item">
                             <div class="featured__list-item--img">
@@ -260,7 +270,7 @@
             <div class="footer__main container">
                 <div class="footer__list grid wide">
                     <div class="row">
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-first">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">CUSTOMER CARE</p>
                                 <ul class="footer__item-about">
@@ -277,7 +287,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-second">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
@@ -304,7 +314,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-third">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
@@ -331,7 +341,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-fouth">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">SUBSCRIBE FOR NEWSLETTER</p>
                                 <form action="">
@@ -370,3 +380,18 @@
     </div>
 </body>
     <script src="./collection.js"></script>
+    <script>
+        const iconHeader = document.querySelector('.header__menu i')
+        const headerNavbar = document.querySelector('.header__navbar')
+
+        iconHeader.addEventListener('click', () => {    
+        headerNavbar.classList.toggle('active')
+        iconHeader.classList.toggle('fa-xmark')
+        })
+        const itemDown = document.querySelector('.header__item-down-2-wrap')
+        const menuDown = document.querySelector('.menu__down-2')
+
+        itemDown.addEventListener('click', () => {
+        menuDown.classList.toggle('menu__down-2--active')
+        })
+    </script>

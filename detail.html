@@ -84,15 +84,25 @@
             </div>
             <div class="header__navbar hide-on-pc">
                 <ul class="header__list df">
-                    <li class="header__item df">
-                        <a class="text black__color" href="">shop</a>
-                        <img src="./assets/img/arrow_nav.svg" alt="">
+                    <li class="header__item">
+                        <a class="text black__color" href="index.html">shop</a>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="history.html">our history</a>
                     </li>
-                    <li class="header__item">
-                        <a class="text black__color" href="product.html">jewelery production</a>
+                    <li class="header__item df header__item-down-2 df df__flex">
+                        <div class="header__item-down-2-wrap df">
+                            <a class="text black__color" href="collection.html">jewelery production</a>
+                            <img src="./assets/img/arrow_nav.svg" alt="">
+                        </div>
+                        <ul class="menu__down-2">
+                            <li class="menu__down-item-2">
+                                <a class="text black__color" href="product.html">care of product</a>
+                            </li>
+                            <li class="menu__down-item-2">
+                                <a class="text black__color active" href="detail.html">product details</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__item">
                         <a class="text black__color" href="dealer.html">become a dealer</a>
@@ -179,19 +189,21 @@
                                         <span class="text">1</span>
                                         <i class="fa-solid fa-plus detail__options-plus"></i>
                                     </div>
-                                    <button class="btn detail__options-text">
-                                        ADD TO CART
-                                    </button>
-                                    <div class="detail__options-heart df">
-                                        <i class="fa-regular fa-heart icon__fisrt"></i>
-                                        <i class="fa-solid fa-heart none icon__second"></i>
+                                    <div class="detail__info-options-text-wrap df">
+                                        <button class="btn detail__options-text">
+                                            ADD TO CART
+                                        </button>
+                                        <div class="detail__options-heart df">
+                                            <i class="fa-regular fa-heart icon__fisrt"></i>
+                                            <i class="fa-solid fa-heart none icon__second"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="detail__info-options--button">
                                     <button class="btn detail__info-options--buy">
                                         BUY NOW
                                     </button>
-                                    <button class="btn detail__info-options--btn">
+                                    <button class="btn detail__info-options--btn hide-on-mobile">
                                         GET THIS PRODUCT BY 1ST APR !
                                     </button>
                                 </div>
@@ -387,7 +399,7 @@
             <div class="footer__main container">
                 <div class="footer__list grid wide">
                     <div class="row">
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-first">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">CUSTOMER CARE</p>
                                 <ul class="footer__item-about">
@@ -404,7 +416,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-second">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
@@ -431,7 +443,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-third">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
@@ -458,7 +470,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12  footer__item-fouth">
                             <div class="footer__item">
                                 <p class="footer__item-header text white__color">SUBSCRIBE FOR NEWSLETTER</p>
                                 <form action="">
@@ -495,12 +507,25 @@
         </div>
         <!-- footer section end -->
     </div>
-
-
-    
+ 
 </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./detail.js"></script>
+    <script>
+        const iconHeader = document.querySelector('.header__menu i')
+        const headerNavbar = document.querySelector('.header__navbar')
+
+        iconHeader.addEventListener('click', () => {    
+        headerNavbar.classList.toggle('active')
+        iconHeader.classList.toggle('fa-xmark')
+        })
+        const itemDown = document.querySelector('.header__item-down-2-wrap')
+        const menuDown = document.querySelector('.menu__down-2')
+
+        itemDown.addEventListener('click', () => {
+        menuDown.classList.toggle('menu__down-2--active')
+        })
+    </script>
 </html>

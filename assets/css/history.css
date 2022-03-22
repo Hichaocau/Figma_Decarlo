@@ -32,6 +32,10 @@
     transform: translateX(-50%);
 }
 
+.birth__img .birth__img-detail img{
+    transition: all 0.2s linear;
+}
+
 .birth__img .birth__img-detail img:hover{
     transform: scale(1.2);
 }
@@ -64,6 +68,9 @@
     letter-spacing: 0;
     text-transform: none;
 }
+.blog__item-img{
+    cursor: pointer;
+}
 
 .blog__item-img--first{
     width: 500px;
@@ -77,24 +84,24 @@
     background: url(../img/quali.jpg) center / cover no-repeat;
 }
 
-
 .blog__item-img--third{
     width: 500px;
     height: 515px;
     background: url(../img/story.jpg) center / cover no-repeat;
 }
 
-.blog__list{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 57.63% 42.37%;
-    grid-gap: 0px;
+.blog__list-row{
+    align-items: center;
     padding-bottom: 100px;
-    overflow: hidden;
 }
 
 .blog__list--first{
     max-width: 497px;
+}
+
+.blog__list--second{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .reason{

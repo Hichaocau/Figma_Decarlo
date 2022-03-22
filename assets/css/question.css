@@ -3,7 +3,7 @@
 }
 
 .ask__header{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .ask__header-item a{
@@ -19,13 +19,15 @@
 
 .ask__header-item{
     margin-right: 60px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .ask__header-item:nth-child(5){
     margin-right: 0;
 }
 
-.ask__header-item:nth-child(1){
+.ask__boxshadow{
     box-shadow: inset 0px -2px 0px #171719;
 }
 
@@ -36,7 +38,6 @@
 }
 
 .ask__form-info--item-wrap i{
-    padding-bottom: 45px;
     font-size: 2.4rem;
     cursor: pointer;
 }
@@ -46,7 +47,7 @@
 }
 
 .ask__form-info--item p{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .ask__form-info--item h4{
@@ -68,15 +69,41 @@
 
 .ask__form-detail--item {
     padding: 40px 0;
-    box-shadow: inset 0px -1px 0px #ABAAB3;
-}
-
-.ask__form-detail--item:nth-child(1){
-    border-top: 1px solid #ABAAB3;
-}
-
-.ask__form-detail--item i{
-    font-size: 3.8rem;
-    font-weight: 400;
     cursor: pointer;
+}
+
+.ask__form-detail--item--not{
+    box-shadow: unset;
+}
+
+.ask__form-info--item-wrap{
+    border-bottom: 1px solid #ABAAB3;
+}
+
+.ask__form-detail--item .fa-plus{
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.ask__form-info{
+   overflow: hidden;
+   height: 0;
+    transition: all 0.3s linear;
+}
+
+.ask__contact{
+    padding-top: 100px;
+}
+
+.ask__contact p{
+    color: var(--text-color);
+    margin-right: 6px;
+    font-size: 2rem;
+}
+
+.ask__contact a{
+    font-size: 2rem;
+    color: var(--text-color);
+    display: block;
+    text-decoration: underline;
 }

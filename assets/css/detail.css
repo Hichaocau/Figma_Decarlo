@@ -123,8 +123,14 @@
     cursor: pointer;
 }
 
+.detail__info-options-text-wrap{
+    flex: 1;
+}
+
 .detail__options-text{
     border: 1px solid #ECECEC;
+    margin-right: 15px;
+    flex: 1;
 }
 
 .detail__options-heart{
