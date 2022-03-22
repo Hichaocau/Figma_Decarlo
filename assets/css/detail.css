@@ -35,20 +35,30 @@
 .detail img{
     width: 100%;
     cursor: pointer;
+    object-fit: cover;
+    height: 100%;
 }
 
 .detail__list-img{
     margin-bottom: 20px;
+    height: 558px;
 }
 
 .detail__list-scroll{
     position: relative;
+    width: 100%;
 }
 
-.detail__arrow-list{
+.detail__arrow-item{
     position: absolute;
     top: 43%;
+}
+
+.detail__arrow-item--prev{
     left: 0;
+}
+
+.detail__arrow-item--next{
     right: 0;
 }
 
@@ -189,15 +199,12 @@
     line-height: 1.1875;
     font-size: 1.6rem;
     padding: 37px 0;
+    cursor: pointer;
 }
 
-.detail__product-info--header li:nth-child(1){
+.detail__product-info--header .detail__product-info--header-active{
     color: var(--text-color);
     border-bottom: 2px solid #19191C;
-}
-
-.detail__product-info--list{
-
 }
 
 .detail__product-info--list-item p{
@@ -222,5 +229,8 @@
     width: 100%;
 }
 
+.detail__scroll-item{
+    border: 2px solid rgb(207, 87, 87);
+}
 
 

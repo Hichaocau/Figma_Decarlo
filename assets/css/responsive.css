@@ -20,6 +20,10 @@
     .header__menu{
         flex: 1;
     }
+    .slider__text {
+       padding-right: 20px;
+       padding-left: 20px;
+    }
 }
 
 /* Mobile & Tablet */
@@ -382,8 +386,17 @@
     .birth__img-detail img{
         width: 28px;
     }
-   
-    
+    .navbar__login,
+    .navbar__search-input{
+        width: 150px;
+    }
+    .header__icon-cart{
+        padding: 15px;
+        width: 240px;
+    }
+    .header__icon-cart p{
+        font-size: 1.6rem;
+    }
    
    
     

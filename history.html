@@ -359,6 +359,22 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./main.js"></script>
     <script src="./history.js"></script>
+    <script>
+        const iconHeader = document.querySelector('.header__menu i')
+        const headerNavbar = document.querySelector('.header__navbar')
+
+        iconHeader.addEventListener('click', () => {    
+        headerNavbar.classList.toggle('active')
+        iconHeader.classList.toggle('fa-xmark')
+        })
+        
+        const itemDown = document.querySelector('.header__item-down-2-wrap')
+        const menuDown = document.querySelector('.menu__down-2')
+
+        itemDown.addEventListener('click', () => {
+        menuDown.classList.toggle('menu__down-2--active')
+        })
+
+    </script>
 </html>

@@ -1,3 +1,4 @@
+// open navbar 
 const iconHeader = document.querySelector('.header__menu i')
 const headerNavbar = document.querySelector('.header__navbar')
 
@@ -6,8 +7,41 @@ iconHeader.addEventListener('click', () => {
   iconHeader.classList.toggle('fa-xmark')
 })
 
+// open menu navbar
+const itemDown = document.querySelector('.header__item-down-2-wrap')
+const menuDown = document.querySelector('.menu__down-2')
 
-// khởi tạo slick slider
+itemDown.addEventListener('click', () => {
+  menuDown.classList.toggle('menu__down-2--active')
+})
+
+// click img =>> play video
+const storyWrap = document.querySelector('.story__list-img--wrap')
+const iconPlayShop = document.querySelector('.story__play')
+const videoShop = document.querySelector('.main__video')
+
+iconPlayShop.addEventListener('click', function () {
+  storyWrap.classList.add('none')
+  videoShop.setAttribute('autoplay', 'true')
+  videoShop.classList.remove('none')
+})
+
+
+// click active heart
+const heartWrap = document.querySelectorAll('.featured__list-item--img')
+const heart = document.querySelectorAll('.icon__fisrt')
+const heartActive = document.querySelectorAll('.icon__second')
+
+
+heartWrap.forEach(function (heartItem, index) {
+  heartItem.addEventListener('click', () => {
+      heart[index].classList.toggle('none')
+      heartActive[index].classList.toggle('none')
+  })
+})
+
+
+// slick slider
 $(document).ready(function(){
   $('.slider__wrap').slick({
       slidesToShow: 1,
@@ -50,35 +84,32 @@ $(document).ready(function(){
   });
 });
 
+// click icon header
+function clickIconHeader(){
 
-const storyWrap = document.querySelector('.story__list-img--wrap')
-const iconPlayShop = document.querySelector('.story__play')
-const videoShop = document.querySelector('.main__video')
+  // open cart
+  const imgCart = document.querySelector('.header__icon-cart--wrap')
+  const cart = document.querySelector('.header__icon-cart')
 
-iconPlayShop.addEventListener('click', function () {
-  storyWrap.classList.add('none')
-  videoShop.setAttribute('autoplay', 'true')
-  videoShop.classList.remove('none')
-})
-
-
-
-const heartWrap = document.querySelectorAll('.featured__list-item--img')
-const heart = document.querySelectorAll('.icon__fisrt')
-const heartActive = document.querySelectorAll('.icon__second')
-
-
-heartWrap.forEach(function (heartItem, index) {
-  heartItem.addEventListener('click', () => {
-      heart[index].classList.toggle('none')
-      heartActive[index].classList.toggle('none')
+  imgCart.addEventListener('click', () => {
+    cart.classList.toggle('none')
   })
-})
 
-const itemDown = document.querySelector('.header__item-down-2-wrap')
-const menuDown = document.querySelector('.menu__down-2')
+  // open profile user
+  const userWrap = document.querySelector('.navbar__login_wrap')
+  const userNavbar = document.querySelector('.navbar__login')
 
-itemDown.addEventListener('click', () => {
-  menuDown.classList.toggle('menu__down-2--active')
-})
+  userWrap.addEventListener('click', () => {
+    userNavbar.classList.toggle('none')
+  })
 
+  // open input search 
+  const searchWrap = document.querySelector('.navbar__search-wrap img')
+  const searchInput = document.querySelector('.navbar__search-input')
+
+  searchWrap.addEventListener('click', () => {
+    searchInput.classList.toggle('none')
+  })
+
+}
+clickIconHeader()
