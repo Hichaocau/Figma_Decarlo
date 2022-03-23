@@ -558,5 +558,29 @@
         itemDown.addEventListener('click', () => {
         menuDown.classList.toggle('menu__down-2--active')
         })
+
+        // open cart
+        const imgCart = document.querySelector('.header__icon-cart--wrap')
+        const cart = document.querySelector('.header__icon-cart')
+
+        imgCart.addEventListener('click', () => {
+            cart.classList.toggle('none')
+        })
+
+        // open profile user
+        const userWrap = document.querySelector('.navbar__login_wrap')
+        const userNavbar = document.querySelector('.navbar__login')
+
+        userWrap.addEventListener('click', () => {
+            userNavbar.classList.toggle('none')
+        })
+
+        // open input search 
+        const searchWrap = document.querySelector('.navbar__search-wrap img')
+        const searchInput = document.querySelector('.navbar__search-input')
+
+        searchWrap.addEventListener('click', () => {
+            searchInput.classList.toggle('none')
+        })
     </script>
 </html>

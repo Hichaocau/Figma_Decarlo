@@ -75,10 +75,37 @@
                 </ul>
             </div>
             <div class="header__icon df">
-                <img src="./assets/img/search.svg" alt="">
-                <img src="./assets/img/heart.svg" alt="">
-                <img src="./assets/img/user.svg" alt="">
-                <img src="./assets/img/cate.svg" alt="">
+                <div class="navbar__search-wrap">
+                    <img src="./assets/img/search.svg" alt="">
+                    <input class="navbar__search-input none" type="text" placeholder="Search...">
+                </div>
+                <div class="navbar__heart-wrap">
+                    <img src="./assets/img/heart.svg" alt="">
+                </div>
+                <div class="navbar__login_wrap">
+                    <img src="./assets/img/user.svg" alt="">
+                    <div class="navbar__login none">
+                        <div class="navbar__login-item">
+                            <i class="fa-regular fa-user navbar__login-icon"></i>
+                            <span class="navbar__login-text">Profile</span>
+                        </div>
+                        <div class="navbar__login-item">
+                            <i class="fa-regular fa-bookmark navbar__login-icon"></i>
+                            <span class="navbar__login-text">Saved</span>
+                        </div>
+                        <div class="navbar__login-item">
+                            <i class="fa-solid fa-gear navbar__login-icon"></i>
+                            <span class="navbar__login-text">Settings</span>
+                        </div>
+                        <span class="navbar__login-out">Log Out</span>
+                    </div>
+                </div>
+                <div class="header__icon-cart--wrap">
+                    <img src="./assets/img/cate.svg" alt="">
+                    <div class="header__icon-cart none">
+                        <p class="text text__des black__color">No products in the cart.</p>
+                    </div>
+                </div>
             </div>
             <div class="header__menu hide-on-pc">
                 <i class="fa-solid fa-bars"></i>
@@ -397,6 +424,30 @@
 
         itemDown.addEventListener('click', () => {
         menuDown.classList.toggle('menu__down-2--active')
+        })
+
+        // open cart
+        const imgCart = document.querySelector('.header__icon-cart--wrap')
+        const cart = document.querySelector('.header__icon-cart')
+
+        imgCart.addEventListener('click', () => {
+            cart.classList.toggle('none')
+        })
+
+        // open profile user
+        const userWrap = document.querySelector('.navbar__login_wrap')
+        const userNavbar = document.querySelector('.navbar__login')
+
+        userWrap.addEventListener('click', () => {
+            userNavbar.classList.toggle('none')
+        })
+
+        // open input search 
+        const searchWrap = document.querySelector('.navbar__search-wrap img')
+        const searchInput = document.querySelector('.navbar__search-input')
+
+        searchWrap.addEventListener('click', () => {
+            searchInput.classList.toggle('none')
         })
     </script>
 </html>

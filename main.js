@@ -21,9 +21,8 @@ const iconPlayShop = document.querySelector('.story__play')
 const videoShop = document.querySelector('.main__video')
 
 iconPlayShop.addEventListener('click', function () {
-  storyWrap.classList.add('none')
-  videoShop.setAttribute('autoplay', 'true')
-  videoShop.classList.remove('none')
+  videoShop.style.zIndex = '2';
+  videoShop.play();
 })
 
 

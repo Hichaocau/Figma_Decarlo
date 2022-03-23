@@ -19,17 +19,16 @@
 
 .birth__img{
     width: 100%;
-    padding-top: 50.85%;
+    /* padding-top: 50.85%; */
+    min-height: 590px;
     background: url(../img/birth.jpg) center / cover no-repeat;
     position: relative;
+
+    justify-content: center;
 }
 
 .birth__img .birth__img-detail{
     cursor: pointer;
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .birth__img .birth__img-detail img{
@@ -49,8 +48,13 @@
 }
 
 .main__video_2{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: -10;
     height: 100%;
+    background-color: #000;
 }
 
 .blog{

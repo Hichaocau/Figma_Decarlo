@@ -383,6 +383,9 @@
         display: block;
         text-align: center;
     }
+    .birth__img{
+        min-height: 345px;
+    }
     .birth__img-detail img{
         width: 28px;
     }
