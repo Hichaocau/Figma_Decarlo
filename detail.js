@@ -91,20 +91,20 @@ function changeImage(){
 changeImage()
 
 
-// click active border
-function activeBorder(){
-    const listLiDetail = document.querySelectorAll('.detail__product-info--header li')
+// // click active border
+// function activeBorder(){
+//     const listLiDetail = document.querySelectorAll('.detail__product-info--header li')
     
-    listLiDetail.forEach( (liItem, index) => {
-        liItem.addEventListener('click', ()=>{
-            listLiDetail.forEach( (liItem2, index) =>{
-                liItem2.classList.remove('detail__product-info--header-active')
-            })
-            liItem.classList.add('detail__product-info--header-active')
-        })
-    })
-}
-activeBorder()
+//     listLiDetail.forEach( (liItem, index) => {
+//         liItem.addEventListener('click', ()=>{
+//             listLiDetail.forEach( (liItem2, index) =>{
+//                 liItem2.classList.remove('detail__product-info--header-active')
+//             })
+//             liItem.classList.add('detail__product-info--header-active')
+//         })
+//     })
+// }
+// activeBorder()
 
 // click active heart
 function activeHeart(){
@@ -123,3 +123,35 @@ function activeHeart(){
     
 }
 activeHeart()
+
+// tab ui 
+function tabUi(){
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    const tabs = $$(".tab-item");
+    const panes = $$(".tab-pane");
+
+    const tabActive = $(".tab-item.active3");
+    const line = $(".tabs .line");
+
+    line.style.left = tabActive.offsetLeft + "px";
+    line.style.width = tabActive.offsetWidth + "px";
+
+    tabs.forEach((tab, index) => {
+        const pane = panes[index];
+
+    tab.onclick = function () {
+        $(".tab-item.active3").classList.remove("active3");
+        $(".tab-pane.active3").classList.remove("active3");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active3");
+        pane.classList.add("active3");
+        };
+    });
+}
+
+tabUi();

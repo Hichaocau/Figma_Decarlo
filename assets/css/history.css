@@ -76,22 +76,19 @@
     cursor: pointer;
 }
 
-.blog__item-img--first{
-    width: 500px;
-    height: 515px;
-    background: url(../img/ele.jpg) center / cover no-repeat;
+.blog__item-img--first img{
+    width: 100%;
+    max-width: 500px;
 }
 
-.blog__item-img--second{
-    width: 500px;
-    height: 515px;
-    background: url(../img/quali.jpg) center / cover no-repeat;
+.blog__item-img--second img{
+    width: 100%;
+    max-width: 500px;
 }
 
-.blog__item-img--third{
-    width: 500px;
-    height: 515px;
-    background: url(../img/story.jpg) center / cover no-repeat;
+.blog__item-img--third img{
+    width: 100%;
+    max-width: 500px;
 }
 
 .blog__list-row{
@@ -126,7 +123,8 @@
     margin-bottom: 41px;
 }
 
-.reason__text button{
-
+.reason__text button a {
+    color: var(--text-color);
+    display: block;
 }
 

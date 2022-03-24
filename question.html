@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/history.css">
     <link rel="stylesheet" href="./assets/css/dealer.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
     <link rel="stylesheet" href="./assets/css/question.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
@@ -82,6 +83,46 @@
                 </div>
                 <div class="navbar__heart-wrap">
                     <img src="./assets/img/heart.svg" alt="">
+                    <div class="header__notify none">
+                        <header class="header__notify-header">
+                            <h3>New notification</h3>
+                        </header>
+                        <ul class="header__notify-list">
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/fd4f4b47e1373478689c373e53218cc9" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Pearl Necklace </p>
+                                        <p class="header__notify-des">Length Of Necklace: 45cm/50cm/60cm/75cm</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/327af91b08d16e4b987517ef00b6a546" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Wedding Ring</p>
+                                        <p class="header__notify-des">Very attractive artificial diamond inlaid ring.</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/10ac04848571cd333949c37e27c686af" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">men's necklace</p>
+                                        <p class="header__notify-des">Merin Accessories Titanium silver unisex bracelet</p>
+                                    </div> 
+                                </a>
+                            </li>
+                            
+                            <footer class="header__notify-footer">
+                                <a href="detail.html" class="text text__des header__notify-footer-btn">See All</a>
+                            </footer>
+                        </ul>
+                    </div>
                 </div>
                 <div class="navbar__login_wrap">
                     <img src="./assets/img/user.svg" alt="">
@@ -158,123 +199,408 @@
          <!-- ask section start -->
          <div class="ask container">
             <div class="ask__header">
-                <ul class="ask__header-list df df__center">
-                    <li class="ask__header-item ask__boxshadow">
+                <ul class="ask__header-list tabs df df__center">
+                    <li class="ask__header-item tab-item active2">
                         <a class="text ask__active">
                             PURCHASE
                         </a>
                     </li>
-                    <li class="ask__header-item ">
+                    <li class="ask__header-item tab-item ">
                         <a class="text">
                             REFUND
                         </a>
                     </li>
-                    <li class="ask__header-item">
+                    <li class="ask__header-item tab-item">
                         <a class="text">
                             PAYMENT
                         </a>
                     </li>
-                    <li class="ask__header-item">
+                    <li class="ask__header-item tab-item">
                         <a class="text">
-                            COVID 19
+                            COVID
                         </a>
                     </li>
-                    <li class="ask__header-item">
+                    <li class="ask__header-item tab-item">
                         <a class="text">
                             PRODUCT
                         </a>
                     </li>
+                    <div class="line"></div>
                 </ul>
             </div>
-            <div class="ask__form container__small">
-                <div class="ask__form-info--item-wrap">
-                     <div class="ask__form-detail--item ask__form-detail--item--not df">
-                        <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                     <div class="ask__form-info">
-                         <div class="ask__form-info--item">
-                             <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                             <p class="text text__des">Information on Mother's Day shipping</p>
-                         </div>
-                         <div class="ask__form-info--item">
-                             <h4 class="text black__color">DELIVERY</h4>
-                             <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                         </div>
-                         <div class="ask__form-info--item ask__form-info--item-second">
-                             <h4 class="text black__color">ENGRAVINGS</h4>
-                             <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
-                             <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
-                             <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+            <div class="ask__form-wrap tab-content">
+                <div class="ask__form container__small tab-pane active2">
+                    <div class="ask__form-info--item-wrap">
+                         <div class="ask__form-detail--item ask__form-detail--item--not df">
+                            <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                         <div class="ask__form-info">
+                             <div class="ask__form-info--item">
+                                 <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                 <p class="text text__des">Information on Mother's Day shipping</p>
+                             </div>
+                             <div class="ask__form-info--item">
+                                 <h4 class="text black__color">DELIVERY</h4>
+                                 <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                             </div>
+                             <div class="ask__form-info--item ask__form-info--item-second">
+                                 <h4 class="text black__color">ENGRAVINGS</h4>
+                                 <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                 <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                 <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                             </div>
                          </div>
                      </div>
-                 </div>
-                 <div class="ask__form-info--item-wrap">
-                    <div class="ask__form-detail--item df">
-                       <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                       <i class="fa-solid fa-plus"></i>
-                   </div>
-                    <div class="ask__form-info">
-                        <div class="ask__form-info--item">
-                            <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                            <p class="text text__des">Information on Mother's Day shipping</p>
-                        </div>
-                        <div class="ask__form-info--item">
-                            <h4 class="text black__color">DELIVERY</h4>
-                            <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                        </div>
-                        <div class="ask__form-info--item ask__form-info--item-second">
-                            <h4 class="text black__color">ENGRAVINGS</h4>
-                            <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
-                            <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
-                            <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+
+                     <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
+                        </div>
+                    </div>           
                 </div>
-                <div class="ask__form-info--item-wrap">
-                    <div class="ask__form-detail--item df">
-                       <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                       <i class="fa-solid fa-plus"></i>
-                   </div>
-                    <div class="ask__form-info">
-                        <div class="ask__form-info--item">
-                            <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                            <p class="text text__des">Information on Mother's Day shipping</p>
+
+                <div class="ask__form container__small tab-pane">
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
                         </div>
-                        <div class="ask__form-info--item">
-                            <h4 class="text black__color">DELIVERY</h4>
-                            <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                        </div>
-                        <div class="ask__form-info--item ask__form-info--item-second">
-                            <h4 class="text black__color">ENGRAVINGS</h4>
-                            <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
-                            <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
-                            <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                    </div> 
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
+                        </div>
+                    </div>       
                 </div>
-                <div class="ask__form-info--item-wrap">
-                    <div class="ask__form-detail--item df">
-                       <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                       <i class="fa-solid fa-plus"></i>
-                   </div>
-                    <div class="ask__form-info">
-                        <div class="ask__form-info--item">
-                            <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                            <p class="text text__des">Information on Mother's Day shipping</p>
+
+                <div class="ask__form container__small tab-pane">
+                    <div class="ask__form-info--item-wrap">
+                         <div class="ask__form-detail--item ask__form-detail--item--not df">
+                            <h3 class="text black__color">PAYMENT IN CASH</h3>
+                            <i class="fa-solid fa-plus"></i>
                         </div>
-                        <div class="ask__form-info--item">
-                            <h4 class="text black__color">DELIVERY</h4>
-                            <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                        </div>
-                        <div class="ask__form-info--item ask__form-info--item-second">
-                            <h4 class="text black__color">ENGRAVINGS</h4>
-                            <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
-                            <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
-                            <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                         <div class="ask__form-info">
+                             <div class="ask__form-info--item">
+                                 <p class="text text__des">You can pay directly in cash when you shop at the store.</p>
+                                 <p class="text text__des">When purchasing remotely, you can pay on delivery at the agreed delivery location.</p>
+                                 <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                             </div>
+                             <div class="ask__form-info--item">
+                                <p class="text text__des">You can pay directly in cash when you shop at the store.</p>
+                                <p class="text text__des">When purchasing remotely, you can pay on delivery at the agreed delivery location.</p>
+                                <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">You can pay directly in cash when you shop at the store.</p>
+                                <p class="text text__des">When purchasing remotely, you can pay on delivery at the agreed delivery location.</p>
+                                <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">ONLINE PAYMENT</h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Deposit cash at the bank or transfer to DERCALO's account</p>
+                                <p class="text text__des">As soon as we receive the confirmation report from the bank, we will proceed to notify you and deliver the goods to you within the specified time.</p>
+                                <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">You can pay directly in cash when you shop at the store.</p>
+                                <p class="text text__des">When purchasing remotely, you can pay on delivery at the agreed delivery location.</p>
+                                <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">You can pay directly in cash when you shop at the store.</p>
+                                <p class="text text__des">When purchasing remotely, you can pay on delivery at the agreed delivery location.</p>
+                                <p class="text text__des">The payment of shipping costs will be subject to the shipping policy</p>
+                            </div>
                         </div>
                     </div>
-                </div>           
+                          
+                </div>
+
+                <div class="ask__form container__small tab-pane">
+                    <div class="ask__form-info--item-wrap">
+                         <div class="ask__form-detail--item ask__form-detail--item--not df">
+                            <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                         <div class="ask__form-info">
+                             <div class="ask__form-info--item">
+                                 <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                 <p class="text text__des">Information on Mother's Day shipping</p>
+                             </div>
+                             <div class="ask__form-info--item">
+                                 <h4 class="text black__color">DELIVERY</h4>
+                                 <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                             </div>
+                             <div class="ask__form-info--item ask__form-info--item-second">
+                                 <h4 class="text black__color">ENGRAVINGS</h4>
+                                 <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                 <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                 <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item df">
+                           <h3 class="text black__color">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="text text__des">Information on Mother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">DELIVERY</h4>
+                                <p class="text text__des">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">ENGRAVINGS</h4>
+                                <p class="text text__des">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.</p>
+                                <p class="text text__des"> We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.</p>
+                                <p class="text text__des">Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+                <div class="ask__form container__small tab-pane">
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask__form-info--item-wrap">
+                        <div class="ask__form-detail--item ask__form-detail--item--not df">
+                           <h3 class="text black__color">WHAT ARE THE WARRANTY AND REFUND OF DERCALO ? </h3>
+                           <i class="fa-solid fa-plus"></i>
+                       </div>
+                        <div class="ask__form-info">
+                            <div class="ask__form-info--item">
+                                <p class="text text__des"> WARRANTY and REFUND costs are free on all orders.</p>
+                                <p class="text text__des">Information on Fother's Day shipping</p>
+                            </div>
+                            <div class="ask__form-info--item">
+                                <h4 class="text black__color">WARRANTY</h4>
+                                <p class="text text__des">Term warranty services have expired.</p>
+                                <p class="text text__des">Warranty for product damage caused by improper use and storage of the product.</p>
+                            </div>
+                            <div class="ask__form-info--item ask__form-info--item-second">
+                                <h4 class="text black__color">REFUND</h4>
+                                <p class="text text__des">The product is defective from the manufacturer.</p>
+                                <p class="text text__des">The product is delivered wrong in quantity, information and model compared to the order.</p>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+
             </div>
             <div class="ask__contact df df__center">
                 <p class="ask__contact-text text__header text__des">Do you have any other questions?</p>
@@ -316,24 +642,24 @@
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Company name: De Carlo Nicholas
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             VAT number: 07020260480
-                                        </a>
+                                        </p>
                                     </li>  
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             REA: FI-674952
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link" style="max-width: 200px">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy
-                                        </a>
+                                        </p>
                                     </li>       
                                 </ul>
                             </div>
@@ -343,24 +669,24 @@
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informazioni legali
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Condizioni generali di vendita
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informativa sulla privacy
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Cookie policy
-                                        </a>
+                                        </p>
                                     </li>        
                                 </ul>
                             </div>
@@ -414,9 +740,11 @@
         })
         const itemDown = document.querySelector('.header__item-down-2-wrap')
         const menuDown = document.querySelector('.menu__down-2')
+        const itemDownIcon = document.querySelector('.header__item-down-2-wrap img')
 
         itemDown.addEventListener('click', () => {
         menuDown.classList.toggle('menu__down-2--active')
+        itemDownIcon.classList.toggle('header__item-down-2-wrap-imgactive')
         })
 
         // open cart
@@ -441,6 +769,14 @@
 
         searchWrap.addEventListener('click', () => {
             searchInput.classList.toggle('none')
+        })
+
+        // open notification
+        const notifyWrap = document.querySelector('.navbar__heart-wrap img')
+        const notify = document.querySelector('.header__notify')
+
+        notifyWrap.addEventListener('click', () => {
+            notify.classList.toggle('none')
         })
     </script>
 </html>

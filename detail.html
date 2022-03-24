@@ -80,6 +80,46 @@
                 </div>
                 <div class="navbar__heart-wrap">
                     <img src="./assets/img/heart.svg" alt="">
+                    <div class="header__notify none">
+                        <header class="header__notify-header">
+                            <h3>New notification</h3>
+                        </header>
+                        <ul class="header__notify-list">
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/fd4f4b47e1373478689c373e53218cc9" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Pearl Necklace </p>
+                                        <p class="header__notify-des">Length Of Necklace: 45cm/50cm/60cm/75cm</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/327af91b08d16e4b987517ef00b6a546" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Wedding Ring</p>
+                                        <p class="header__notify-des">Very attractive artificial diamond inlaid ring.</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/10ac04848571cd333949c37e27c686af" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">men's necklace</p>
+                                        <p class="header__notify-des">Merin Accessories Titanium silver unisex bracelet</p>
+                                    </div> 
+                                </a>
+                            </li>
+                            
+                            <footer class="header__notify-footer">
+                                <a href="detail.html" class="text text__des header__notify-footer-btn">See All</a>
+                            </footer>
+                        </ul>
+                    </div>
                 </div>
                 <div class="navbar__login_wrap">
                     <img src="./assets/img/user.svg" alt="">
@@ -247,39 +287,108 @@
                 </div>
             </div>
             <div class="detail__product-info">
-                <ul class="detail__product-info--header df">
-                    <li class="text text__header detail__product-info--header-active">PRODUCT INFORMATION</li>
-                    <li class="text text__header">OUR SERVICE</li>
-                    <li class="text text__header">PAYMENT METHOD</li>
+                <ul class="detail__product-info--header tabs df">
+                    <li class="text text__header tab-item active3">PRODUCT INFORMATION</li>
+                    <li class="text text__header tab-item">OUR SERVICE</li>
+                    <li class="text text__header tab-item">PAYMENT METHOD</li>
+                    <div class="line"></div>
                 </ul>
-                <div class="detail__product-info--list grid wide">
-                    <div class="row">
-                        <div class="col l-6 m-12 c-12">
-                            <div class="detail__product-info--list-item">
-                                <p class="text text__header black__color">PRODUCT INFO</p>
-                                <ul class="detail__product-info--list-item-text">
-                                    <li class="text text__des df">
-                                        <img src="./assets/img/detail-icon2.svg" alt="">
-                                        Sed ut perspiciatis unde omnis iste natus error sit
-                                    </li>
-                                    <li class="text text__des df">
-                                        <img src="./assets/img/detail-icon2.svg" alt="">
-                                        Sed ut perspiciatis unde omnis iste natus error sit
-                                    </li>
-                                    <li class="text text__des df">
-                                        <img src="./assets/img/detail-icon2.svg" alt="">
-                                        Sed ut perspiciatis unde omnis iste natus error sit
-                                    </li>
-                                    <li class="text text__des df">
-                                        <img src="./assets/img/detail-icon2.svg" alt="">
-                                        Sed ut perspiciatis unde omnis iste natus error sit
-                                    </li>
-                                </ul>
+                <div class="detail__product-info--list-wrap tab-content">
+                    <div class="detail__product-info--list grid wide tab-pane active3">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-item">
+                                    <p class="text text__header black__color">PRODUCT INFO</p>
+                                    <ul class="detail__product-info--list-item-text">
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-img">
+                                    <img src="./assets/img/detail7.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="col l-6 m-12 c-12">
-                            <div class="detail__product-info--list-img">
-                                <img src="./assets/img/detail7.jpg" alt="">
+                    </div>
+
+                    <div class="detail__product-info--list grid wide tab-pane">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-item">
+                                    <p class="text text__header black__color">OUR SERVICE</p>
+                                    <ul class="detail__product-info--list-item-text">
+                                        <li class="text text__des df" style="align-items: baseline;">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-img">
+                                    <img src="https://media.istockphoto.com/photos/pile-of-scrap-gold-jewelry-on-a-white-background-picture-id155280698?k=20&m=155280698&s=612x612&w=0&h=7Z71AT2JVptYYHn8mFPpwcTvTrglfZm47aVIluxI6Kw=" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail__product-info--list grid wide tab-pane">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-item">
+                                    <p class="text text__header black__color">PAYMENT METHOD</p>
+                                    <ul class="detail__product-info--list-item-text">
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Online payment method
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Deposit cash at the bank or transfer to DERCALO's account
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            As soon as we receive the confirmation report from the bank
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            The payment of shipping costs will be subject to the shipping policy
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            Payment in cash
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            You can pay directly in cash when you shop at the store.
+                                        </li>
+                                        <li class="text text__des df">
+                                            <img src="./assets/img/detail-icon2.svg" alt="">
+                                            When purchasing remotely, you can pay on delivery at the agreed delivery location.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-12 c-12">
+                                <div class="detail__product-info--list-img">
+                                    <img src="https://media.istockphoto.com/photos/gold-jewelry-diamond-rings-show-in-luxury-retail-store-window-display-picture-id1338646661?b=1&k=20&m=1338646661&s=170667a&w=0&h=V__MPGHGBs7p2JNH6tgKlyO6CXBYtPOHIg4KoOzSLp8=" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,19 +405,9 @@
                     <div class="col l-3 m-6 c-6">
                         <div class="featured__list-item">
                             <div class="featured__list-item--img">
-                                <i class="featured__list-item--icon fa-regular fa-heart none icon__fisrt"></i>
-                                <i class="featured__list-item--icon fa-solid fa-heart icon__second"></i>
-                            </div>
-                            <div class="featured__list-item--info">
-                                <p class="text black__color">product name</p>
-                                <span class="text">$99.99</span>
-                            </div>
-                            <button class="btn">add to cart</button>
-                        </div>
-                    </div>
-                    <div class="col l-3 m-6 c-6">
-                        <div class="featured__list-item">
-                            <div class="featured__list-item--img">
+                                <div class="featured__list-item--img-wrap">
+                                    <img src="./assets/img/product.jpg" alt="">
+                                </div>
                                 <i class="featured__list-item--icon fa-regular fa-heart icon__fisrt"></i>
                                 <i class="featured__list-item--icon fa-solid fa-heart none icon__second"></i>
                             </div>
@@ -316,12 +415,17 @@
                                 <p class="text black__color">product name</p>
                                 <span class="text">$99.99</span>
                             </div>
-                            <button class="btn">add to cart</button>
+                           <button class="btn">
+                                <a href="detail.html">add to cart</a>
+                            </button>
                         </div>
                     </div>
                     <div class="col l-3 m-6 c-6">
                         <div class="featured__list-item">
                             <div class="featured__list-item--img">
+                                <div class="featured__list-item--img-wrap">
+                                    <img src="./assets/img/product.jpg" alt="">
+                                </div>
                                 <i class="featured__list-item--icon fa-regular fa-heart icon__fisrt"></i>
                                 <i class="featured__list-item--icon fa-solid fa-heart none icon__second"></i>
                             </div>
@@ -329,12 +433,17 @@
                                 <p class="text black__color">product name</p>
                                 <span class="text">$99.99</span>
                             </div>
-                            <button class="btn">add to cart</button>
+                           <button class="btn">
+                                <a href="detail.html">add to cart</a>
+                            </button>
                         </div>
                     </div>
                     <div class="col l-3 m-6 c-6">
                         <div class="featured__list-item">
                             <div class="featured__list-item--img">
+                                <div class="featured__list-item--img-wrap">
+                                    <img src="./assets/img/product.jpg" alt="">
+                                </div>
                                 <i class="featured__list-item--icon fa-regular fa-heart icon__fisrt"></i>
                                 <i class="featured__list-item--icon fa-solid fa-heart none icon__second"></i>
                             </div>
@@ -342,7 +451,27 @@
                                 <p class="text black__color">product name</p>
                                 <span class="text">$99.99</span>
                             </div>
-                            <button class="btn">add to cart</button>
+                           <button class="btn">
+                                <a href="detail.html">add to cart</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <div class="featured__list-item">
+                            <div class="featured__list-item--img">
+                                <div class="featured__list-item--img-wrap">
+                                    <img src="./assets/img/product.jpg" alt="">
+                                </div>
+                                <i class="featured__list-item--icon fa-regular fa-heart icon__fisrt"></i>
+                                <i class="featured__list-item--icon fa-solid fa-heart none icon__second"></i>
+                            </div>
+                            <div class="featured__list-item--info">
+                                <p class="text black__color">product name</p>
+                                <span class="text">$99.99</span>
+                            </div>
+                           <button class="btn">
+                                <a href="detail.html">add to cart</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -363,7 +492,7 @@
                                 <span class="text text__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                             </div>
                             <div class="service__item-more">
-                                <a href="">
+                                <a href="question.html">
                                     <span class="text black__color">read more</span>
                                     <img src="./assets/img/arrow-right2.svg" alt="">
                                 </a>
@@ -378,7 +507,7 @@
                                 <span class="text text__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                             </div>
                             <div class="service__item-more">
-                                <a href="">
+                                <a href="question.html">
                                     <span class="text black__color">read more</span>
                                     <img src="./assets/img/arrow-right2.svg" alt="">
                                 </a>
@@ -393,7 +522,7 @@
                                 <span class="text text__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                             </div>
                             <div class="service__item-more">
-                                <a href="">
+                                <a href="question.html">
                                     <span class="text black__color">read more</span>
                                     <img src="./assets/img/arrow-right2.svg" alt="">
                                 </a>
@@ -408,7 +537,7 @@
                                 <span class="text text__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                             </div>
                             <div class="service__item-more">
-                                <a href="">
+                                <a href="question.html">
                                     <span class="text black__color">read more</span>
                                     <img src="./assets/img/arrow-right2.svg" alt="">
                                 </a>
@@ -452,24 +581,24 @@
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Company name: De Carlo Nicholas
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             VAT number: 07020260480
-                                        </a>
+                                        </p>
                                     </li>  
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             REA: FI-674952
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link" style="max-width: 200px">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy
-                                        </a>
+                                        </p>
                                     </li>       
                                 </ul>
                             </div>
@@ -479,24 +608,24 @@
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informazioni legali
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Condizioni generali di vendita
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informativa sulla privacy
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Cookie policy
-                                        </a>
+                                        </p>
                                     </li>        
                                 </ul>
                             </div>
@@ -552,11 +681,14 @@
         headerNavbar.classList.toggle('active')
         iconHeader.classList.toggle('fa-xmark')
         })
+
         const itemDown = document.querySelector('.header__item-down-2-wrap')
         const menuDown = document.querySelector('.menu__down-2')
+        const itemDownIcon = document.querySelector('.header__item-down-2-wrap img')
 
         itemDown.addEventListener('click', () => {
         menuDown.classList.toggle('menu__down-2--active')
+        itemDownIcon.classList.toggle('header__item-down-2-wrap-imgactive')
         })
 
         // open cart
@@ -581,6 +713,14 @@
 
         searchWrap.addEventListener('click', () => {
             searchInput.classList.toggle('none')
+        })
+
+        // open notification
+        const notifyWrap = document.querySelector('.navbar__heart-wrap img')
+        const notify = document.querySelector('.header__notify')
+
+        notifyWrap.addEventListener('click', () => {
+            notify.classList.toggle('none')
         })
     </script>
 </html>

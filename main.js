@@ -10,9 +10,11 @@ iconHeader.addEventListener('click', () => {
 // open menu navbar
 const itemDown = document.querySelector('.header__item-down-2-wrap')
 const menuDown = document.querySelector('.menu__down-2')
+const itemDownIcon = document.querySelector('.header__item-down-2-wrap img')
 
 itemDown.addEventListener('click', () => {
   menuDown.classList.toggle('menu__down-2--active')
+  itemDownIcon.classList.toggle('header__item-down-2-wrap-imgactive')
 })
 
 // click img =>> play video
@@ -108,6 +110,14 @@ function clickIconHeader(){
 
   searchWrap.addEventListener('click', () => {
     searchInput.classList.toggle('none')
+  })
+
+  // open notification
+  const notifyWrap = document.querySelector('.navbar__heart-wrap img')
+  const notify = document.querySelector('.header__notify')
+
+  notifyWrap.addEventListener('click', () => {
+    notify.classList.toggle('none')
   })
 
 }

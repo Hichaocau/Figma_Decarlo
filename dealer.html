@@ -81,6 +81,46 @@
                 </div>
                 <div class="navbar__heart-wrap">
                     <img src="./assets/img/heart.svg" alt="">
+                    <div class="header__notify none">
+                        <header class="header__notify-header">
+                            <h3>New notification</h3>
+                        </header>
+                        <ul class="header__notify-list">
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/fd4f4b47e1373478689c373e53218cc9" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Pearl Necklace </p>
+                                        <p class="header__notify-des">Length Of Necklace: 45cm/50cm/60cm/75cm</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/327af91b08d16e4b987517ef00b6a546" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">Wedding Ring</p>
+                                        <p class="header__notify-des">Very attractive artificial diamond inlaid ring.</p>
+                                    </div> 
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item">
+                                <a href="detail.html" class="header__notify-link">
+                                    <img src="https://cf.shopee.vn/file/10ac04848571cd333949c37e27c686af" alt="" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <p class="header__notify-name">men's necklace</p>
+                                        <p class="header__notify-des">Merin Accessories Titanium silver unisex bracelet</p>
+                                    </div> 
+                                </a>
+                            </li>
+                            
+                            <footer class="header__notify-footer">
+                                <a href="detail.html" class="text text__des header__notify-footer-btn">See All</a>
+                            </footer>
+                        </ul>
+                    </div>
                 </div>
                 <div class="navbar__login_wrap">
                     <img src="./assets/img/user.svg" alt="">
@@ -323,24 +363,24 @@
                                 <p class="footer__item-header text white__color">LEGAL INFORMATION:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Company name: De Carlo Nicholas
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             VAT number: 07020260480
-                                        </a>
+                                        </p>
                                     </li>  
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             REA: FI-674952
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link" style="max-width: 200px">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy
-                                        </a>
+                                        </p>
                                     </li>       
                                 </ul>
                             </div>
@@ -350,24 +390,24 @@
                                 <p class="footer__item-header text white__color">LEGAL TERMS:</p>
                                 <ul class="footer__item-about">
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informazioni legali
-                                        </a>
+                                        </p>
                                     </li>
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Condizioni generali di vendita
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Informativa sulla privacy
-                                        </a>
+                                        </p>
                                     </li> 
                                     <li class="footer__item-link">
-                                        <a class="text text__des" href="">
+                                        <p class="text text__des" href="">
                                             Cookie policy
-                                        </a>
+                                        </p>
                                     </li>        
                                 </ul>
                             </div>
@@ -421,9 +461,11 @@
         })
         const itemDown = document.querySelector('.header__item-down-2-wrap')
         const menuDown = document.querySelector('.menu__down-2')
+        const itemDownIcon = document.querySelector('.header__item-down-2-wrap img')
 
         itemDown.addEventListener('click', () => {
         menuDown.classList.toggle('menu__down-2--active')
+        itemDownIcon.classList.toggle('header__item-down-2-wrap-imgactive')
         })
 
         // open cart
@@ -448,6 +490,14 @@
 
         searchWrap.addEventListener('click', () => {
             searchInput.classList.toggle('none')
+        })
+
+        // open notification
+        const notifyWrap = document.querySelector('.navbar__heart-wrap img')
+        const notify = document.querySelector('.header__notify')
+
+        notifyWrap.addEventListener('click', () => {
+            notify.classList.toggle('none')
         })
     </script>
 </html>
